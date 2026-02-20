@@ -7,7 +7,6 @@ with open('test.txt') as f:
 with open('test.txt', 'a') as fileWrite:
     fileWrite.write("Test3,90\n")
     fileWrite.write("Test2,85\n")
-
 # import csv
 #
 # students = []
