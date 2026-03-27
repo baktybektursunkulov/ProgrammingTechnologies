@@ -1,5 +1,11 @@
 """ Введение в ООП"""
 # ---Простой класс ---
+# import Student as s
+# s= s.Student("test","test","test")
+# s1= s.Student2()
+# import Car as c
+# car = c.Car("test","test", 2022)
+
 class Student:
     def __init__(self, name, age, grade):
         self.name = name
@@ -117,32 +123,34 @@ if __name__ == "__main__":
 
     r = Rectangle(5, 3)
     print(f"Площадь: {r.area()}, Периметр: {r.perimeter()}")
+    #
+    # d = Dog("Бобик")
+    # c = Cat("Мурка")
+    # print(f"{d.name}: {d.speak()}")
+    # print(f"{c.name}: {c.speak()}")
 
-    d = Dog("Бобик")
-    c = Cat("Мурка")
-    print(f"{d.name}: {d.speak()}")
-    print(f"{c.name}: {c.speak()}")
-
-    # Полиморфизм: одна функция — разные объекты
-    for animal in [Dog("Рекс"), Cat("Васька")]:
-        print(f"{animal.name}: {make_sound(animal)}")
-
-    for shape in [Circle(5), Square(4)]:
-        print_area(shape)
+    # # Полиморфизм: одна функция — разные объекты
+    animal = Dog("Test")
+    print(make_sound(animal))
+    # for animal in [Dog("Рекс"), Cat("Васька")]:
+    #     print(f"{animal.name}: {make_sound(animal)}")
+    #
+    # for shape in [Circle(5), Square(4)]:
+    #     print_area(shape)
 
     acc = BankAccount(1000)
     acc.deposit(500)
     print(f"Баланс: {acc.get_balance()}")
 
-    car = Car()
-    print(car.start_engine())
-
-    # Композиция: Library «имеет» список Book
-    print("\n--- Композиция (библиотека) ---")
-    lib = Library()
-    lib.add_book(Book("Война и мир", "Толстой"))
-    lib.add_book(Book("Анна Каренина", "Толстой"))
-    lib.add_book(Book("Преступление и наказание", "Достоевский"))
-    print(f"Всего книг: {lib.total_books()}")
-    for book in lib.find_by_author("Толстой"):
-        print(f"  {book}")
+    # car = Car()
+    # print(car.start_engine())
+    #
+    # # Композиция: Library «имеет» список Book
+    # print("\n--- Композиция (библиотека) ---")
+    # lib = Library()
+    # lib.add_book(Book("Война и мир", "Толстой"))
+    # lib.add_book(Book("Анна Каренина", "Толстой"))
+    # lib.add_book(Book("Преступление и наказание", "Достоевский"))
+    # print(f"Всего книг: {lib.total_books()}")
+    # for book in lib.find_by_author("Толстой"):
+    #     print(f"  {book}")
