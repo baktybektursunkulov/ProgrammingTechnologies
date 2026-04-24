@@ -1,7 +1,7 @@
 # Задачи: Pandas — обработка данных (часть 1)
 
 **Уровень:** Beginner  
-**Темы:** `Series`, `DataFrame`, чтение/запись CSV, индексация `loc/iloc`, фильтрация, новые столбцы, `groupby`, `merge/concat`, пропуски `NaN`
+**Темы:** `Series`, `DataFrame`, чтение/запись CSV, индексация `loc/iloc`, фильтрация, новые столбцы, `groupby`, `merge/concat`, пропуски `NaN`, базовая визуализация данных
 
 ---
 
@@ -94,4 +94,8 @@
 ---
 
 **Примеры к уроку:** см. [`pandas_part1_examples.py`](pandas_part1_examples.py)
+
+**Лабораторная работа (все пункты — через ООП):** см. [`LAB_WORK_PANDAS.md`](LAB_WORK_PANDAS.md); шаблон кода — [`lab_pandas_oop.py`](lab_pandas_oop.py).
+
+**Практика Middle:** см. [`TASKS_MIDDLE.md`](TASKS_MIDDLE.md) (включая блок Data Visualization с `matplotlib` и `seaborn`).
 
