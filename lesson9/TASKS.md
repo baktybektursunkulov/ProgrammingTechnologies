@@ -1,4 +1,4 @@
-# Задачи: Data Visualization with Matplotlib and Seaborn (Part 1)
+# Задачи: Data Visualization with Matplotlib and Seaborn
 
 **Уровень:** Beginner  
 **Темы:** базовые графики `matplotlib`, работа с осями и подписями, `line/bar/scatter/hist`, стилизация, `seaborn` (`barplot`, `heatmap`)
