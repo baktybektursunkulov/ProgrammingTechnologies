@@ -25,7 +25,7 @@ def line_plot_example() -> None:
     plt.title("Sales by day")
     plt.xlabel("day")
     plt.ylabel("sales")
-    plt.grid(True, alpha=0.3)
+    # plt.grid(False, alpha=0.3)
     plt.legend()
     plt.tight_layout()
     plt.show()
@@ -41,7 +41,7 @@ def bar_plot_example() -> None:
     plt.xlabel("subject")
     plt.ylabel("mean score")
     plt.ylim(0, 100)
-    plt.tight_layout()
+    # plt.tight_layout()
     plt.show()
 
 

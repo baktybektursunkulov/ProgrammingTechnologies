@@ -56,11 +56,6 @@ def _save_figure(fig: plt.Figure, filename: str) -> Path:
     return filepath
 
 
-@app.get("/health")
-def health_check() -> dict[str, str]:
-    return {"status": "ok"}
-
-
 @app.get("/plots/line")
 def line_plot(points: int = Query(default=40, ge=10, le=500)) -> StreamingResponse:
     x_values = list(range(points))
@@ -94,7 +89,6 @@ def line_plot_file(points: int = Query(default=40, ge=10, le=500)) -> FileRespon
 
 @app.get("/plots/hist")
 def hist_plot(bins: int = Query(default=10, ge=3, le=30)) -> StreamingResponse:
-    # Small deterministic sample for teaching.
     values = [55, 60, 61, 65, 68, 70, 72, 73, 75, 77, 78, 80, 82, 84, 85, 88, 90, 91, 94, 97]
 
     fig, ax = plt.subplots(figsize=(8, 4))
