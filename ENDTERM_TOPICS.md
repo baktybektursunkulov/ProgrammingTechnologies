@@ -5,7 +5,7 @@
 ссылка на выбор темы https://docs.google.com/spreadsheets/d/188PrVIjTqiwlMIEy-E1vPsqAv9SYGpDb/edit?usp=sharing&ouid=109431966877820439256&rtpof=true&sd=true
 
 ---
-
+- change 
 ## 1. Экзаменационная ведомость
 
 **Сквозная задача:** файл `exam.csv`: колонки `group`, `score` (и при необходимости ещё одна числовая). Сводка по группам и вывод тех же чисел через API.
